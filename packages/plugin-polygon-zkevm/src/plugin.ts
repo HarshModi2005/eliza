@@ -29,6 +29,9 @@ import { getAccountBalanceAction } from './actions/getAccountBalance';
 import { getGasPriceEstimatesAction } from './actions/getGasPriceEstimates';
 import { checkBlockStatusAction } from './actions/checkBlockStatus';
 import { getBatchInfoAction } from './actions/getBatchInfo';
+import { getExitRootsAction } from './actions/getExitRoots';
+import { estimateZkNonceAction } from './actions/estimateZkNonce';
+import { sendL2TransactionAction } from './actions/sendL2Transaction';
 
 /**
  * Define the configuration schema for the plugin with the following properties:
@@ -261,6 +264,9 @@ const plugin: Plugin = {
     getGasPriceEstimatesAction,
     checkBlockStatusAction,
     getBatchInfoAction,
+    getExitRootsAction,
+    estimateZkNonceAction,
+    sendL2TransactionAction,
   ],
   providers: [helloWorldProvider],
 };
